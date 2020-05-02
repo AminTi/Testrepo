@@ -1,5 +1,5 @@
 let hamburger = document.querySelector(".fa-hamburger")
-let ul = document.querySelector(".nav2")
+let ul = document.querySelector(".coran")
 
 
 hamburger.addEventListener("click", function () {
