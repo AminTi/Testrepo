@@ -7,14 +7,16 @@
 body {
 
 
-    height: auto;
-    background: url("/casablanca.jpg");
-    //linear-gradient(to bottom, rgba(0, 0, 10, 0.75) 0%, rgba(148, 144, 144, 0.2) 100%),
+
+    background-image: url("/casablanca1.jpg");
+
     background-repeat: no-repeat;
     background-size: cover;
     width: 100vw;
     height: 100vh;
     height: auto;
+
+
 }
 
 .nav {
@@ -25,8 +27,8 @@ body {
     // position: fixed;
     // top: 0;
     width: 100%;
-    // opacity: 30%;
     z-index: 999;
+
 
     .fa-hamburger {
         padding: 10px 10px;
@@ -43,28 +45,33 @@ body {
     }
 }
 
+.coran {
+    display: none;
+
+}
 
 .coran {
 
-    color: whitesmoke;
-    font-size: 24px;
-    font-weight: bold;
-    padding: 50% 10px;
-    background: #4CAF50;
+
+    display: block;
+    background: green;
     display: flex;
-    flex-direction: column;
     justify-content: center;
     align-items: center;
-    text-align: center;
-    width: 100vw;
-    height: 100vh;
-    display: none;
-    z-index: 999;
-
-    position: absolute;
 
 
+
+
+    .kitab {
+        color: whitesmoke;
+        margin: 0 auto;
+        padding: 10px 0px;
+        font-size: 18px;
+
+    }
 }
+
+
 
 .wrapper {
 
@@ -92,6 +99,7 @@ input {
     font-size: 20px;
     border-radius: 5px;
     outline: none;
+    margin: 5px 0px;
 }
 
 .city {
@@ -105,9 +113,6 @@ main {
     flex-direction: column;
     justify-content: center;
     align-items: center;
-
-
-
 }
 
 .secondWrapper {
@@ -127,6 +132,12 @@ main {
     border: 1px solid green;
     opacity: 80%;
 
+}
+
+.fa-temperature-high {
+    padding: 6px 0px;
+    font-size: 18px;
+    color: black
 }
 
 button {
@@ -189,5 +200,38 @@ footer {
     align-items: center;
     padding: 100px 100px;
     background: whitesmoke;
+}
+
+.main2 {
+    display: none;
+
+}
+
+
+@media screen and (min-width: 600px) {
+
+
+
+    main {
+        display: none
+    }
+
+
+    .main2 {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        height: 100vh;
+
+        div {
+            font-size: 25px;
+            font-weight: bolder;
+            color: green;
+        }
+
+    }
+
+
+
 
 }
